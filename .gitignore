@@ -1,0 +1,39 @@
+# sbt
+# (may want to keep parts of 'project')
+bin/
+project/target
+project/build.properties
+target/
+build/
+src/test/resources/unloadOp
+src/test/resources/UNLOAD*
+.bsp/sbt.json
+
+# eclipse
+build
+.classpath
+.project
+.settings
+.worksheet
+
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+
+
+# mac
+.DS_Store
+
+# other?
+.history
+.scala_dependencies
+.cache
+.cache-main
+
+#general
+*.class
+
+/.bsp/
