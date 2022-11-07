@@ -35,12 +35,12 @@ class ResultsetToDataframe(var resultSet: ResultSet) {
 
 
   //Function to print ResultSet
-  def printlnRS(resultSet: ResultSet) = {
+  def printlnRS(resultSet: ResultSet, rowCount: Int = resultSetList.length) = {
     //    resultSet.first()
     var strRS = ""
     val rows = resultSetList
     strRS+=colNames.mkString(" | ")+"\n"
-    for (i <- 0 until rows.length) strRS+= rows(i).mkString(" | ")+"\n"
+    for (i <- 0 until rowCount) strRS+= rows(i).mkString(" | ")+"\n"
     println(strRS)
   }
 
